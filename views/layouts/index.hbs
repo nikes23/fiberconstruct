@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" href="icons/apple-touch-icon-167.png" sizes="167x167">
     <link rel="apple-touch-icon" href="icons/apple-touch-icon-152.png" sizes="152x152">
     <link rel="shortcut icon" href="icons/android-icon.png" sizes="196x196">
+    <link rel="stylesheet" href="https://use.typekit.net/ubp0gfr.css">
     <meta name="msapplication-square70x70logo" content="icons/70.png">
     <meta name="msapplication-square150x150logo" content="icons/150.png">
     <meta name="msapplication-wide310x150logo" content="icons/310x150.png">
@@ -55,7 +56,7 @@
     <video autoplay loop muted playsinline preload poster id="video-hero">
         <source src="assets/Fiber_Costruct_Website_Video.mp4" type="video/mp4"/>
         <source src="assets/Fiber_Costruct_Website_Video.webm" type="video/webm"/>
-        <img alt="Fiber Construct" src="" width="100%"
+        <img alt="Fiber Construct" src="assets/Standbild_FiberConstruct_Video.png" width="100%"
              height="auto"/>
     </video>
     <div class="layer-hero">
@@ -65,11 +66,11 @@
         </div>
     </div>
 </div>
-<section id="about" class="about module">
+<section id="about" class="about">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row module">
             <div class="col-xl-7 col-lg-12 d-flex flex-column justify-content-center align-items-stretch">
-                <div class="content">
+                <div class="content about-us-text">
                     <h2>WER IST FIBER CONSTRUCT?</h2>
                     <p class="text-justify">
                         Fiber ist das englische Wort für (Glas)Faser. Dementsprechend übernehmen wir die
@@ -215,14 +216,14 @@
     </div>
 </section>
 
-<div class="container marketing">
+<div class="container-fluid marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row exercise">
-        <div class="col-lg-6 module">
+        <div class="col-xl-6 col-lg-6 module marketing_container">
             <div class="center"><i class="fa fa-handshake"></i></div>
             <h2>Beratung</h2>
-            <p>Unsere Experten beraten Sie zu allen Fragestellungen rund um das Thema Breitbandausbau, sowie die dafür
+            <p class="marketing_text">Unsere Experten beraten Sie zu allen Fragestellungen rund um das Thema Breitbandausbau, sowie die dafür
                 infrage kommenden Förderprogramme. Wir begleiten Städte und Gemeinde bei einem flächendeckenden Ausbau
                 der Netzinfrastruktur und sehen in einer individuellen und erstklassigen Beratung den Grundstein für ein
                 gelungenes Projekt.
@@ -231,10 +232,12 @@
                  src="assets/img_4.png">
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
-        <div class="col-lg-6 module">
-            <div class="center"><i class="fa fa-brain"></i></div>
-            <h2>Planung</h2>
-            <p>In der Grobplanung planen wir den möglichen Verlauf der Telekommunikationstrassen. Auf dieser Basis
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center">
+                <img src="assets/Planung_Wegesicherung.png" class="centerIconImage">
+            </div>
+            <h2>Planung und Wegesicherung</h2>
+            <p class="marketing_text">In der Grobplanung planen wir den möglichen Verlauf der Telekommunikationstrassen. Auf dieser Basis
                 begleiten wir Sie bei allen Schritten bis zur vollumfänglichen behördlichen Genehmigung des Vorhabens.
                 In der technischen Planung erstellen wir alle Kalkulations- und Netzplanungsunterlagen sowie alle
                 notwendigen Unterlagen für die Bauausführung.
@@ -243,10 +246,12 @@
                  src="assets/img_1.png">
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
-        <div class="col-lg-6 module">
-            <div class="center"><i class="fa fa-hammer"></i></div>
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center">
+                <img src="assets/crane.png" class="centerIconImageCrane">
+            </div>
             <h2>Baubegleitung</h2>
-            <p>Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort und können die zum Teil sehr komplexen
+            <p class="marketing_text">Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort und können die zum Teil sehr komplexen
                 Tiefbaumaßnahmen auf Basis alternativer Verlegemethoden vollumfänglich übernehmen. Neben Organisation
                 und Koordination übernehmen wir auch die Überwachung der einzelnen Teilbereiche des Baus. Zudem
                 übernehmen wir auch die fachgerechte Montage und korrekte Vermessung.
@@ -255,10 +260,10 @@
                  src="assets/img_2.png">
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
-        <div class="col-lg-6 module">
+        <div class="col-xl-6 col-lg-6 module marketing_container">
             <div class="center"><i class="fa fa-file-signature"></i></div>
             <h2>Dokumentation</h2>
-            <p>Die Dokumentation der einzelnen abgeschlossenen Bauvorhaben übernahmen wir fachgerecht, schnell und
+            <p class="marketing_text">Die Dokumentation der einzelnen abgeschlossenen Bauvorhaben übernahmen wir fachgerecht, schnell und
                 zuverlässig. Unsere Dokumentatoren stellen auf Basis des technischen Expertenwissens eine hochwertige
                 und fehlerfreie Datenerfassung sicher, welche sie in den verschiedenen Geoinformationssystemen erfassen.
             </p>
@@ -267,156 +272,188 @@
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
     </div>
-    <section class="contactForm module" id="contact">
-        <div class="container">
-            <!--<div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Contact Form #01</h2>
-                </div>
-            </div>-->
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12">
-                    <div class="wrapper">
-                        <div class="row no-gutters">
-                            <div class="col-lg-5 col-md-12 d-flex align-items-stretch information">
-                                <div class="info-wrap primaryColor primaryBackColor w-100 p-lg-5 p-4">
-                                    <h2 class="mb-4 mt-md-4">Informationen</h2>
-                                    <div class="dbox w-100 d-flex align-items-start">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="text pl-3 contactFormRightText">
-                                            <p><span>Adresse:</span><br>
-                                                Erni-Singerl-Straße 1,<br>85053 Ingolstadt
-                                            </p>
-                                        </div>
+</div>
+
+<section class="contactForm module" id="contact">
+    <div class="container">
+        <!--<div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Contact Form #01</h2>
+            </div>
+        </div>-->
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 col-md-12 d-flex align-items-stretch information">
+                            <div class="info-wrap primaryColor primaryBackColor w-100 p-lg-5 p-4">
+                                <h2 class="mb-4 mt-md-4">Informationen</h2>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
                                     </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-phone"></span>
-                                        </div>
-                                        <div class="text pl-3 contactFormRightText">
-                                            <p><span>Telefon:</span><br><a href="tel://084149399122">+49 841
-                                                49399122</a>
-                                            </p>
-                                        </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Adresse:</span><br>
+                                            <a href="">Erni-Singerl-Straße 1,<br>85053 Ingolstadt</a>
+                                        </p>
                                     </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-paper-plane"></span>
-                                        </div>
-                                        <div class="text pl-3 contactFormRightText">
-                                            <p><span>E-Mail:</span><br><a
-                                                    href="mailto:info@yoursite.com">info@fiberconstruct.de</a></p>
-                                        </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
                                     </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-globe"></span>
-                                        </div>
-                                        <div class="text pl-3 contactFormRightText">
-                                            <p><span>Webseite</span><br><a href="#">fiberconstruct.de</a></p>
-                                        </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Telefon:</span><br><a href="tel:+4984149399122">+49 841
+                                            49399122</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>E-Mail:</span><br><a
+                                                href="mailto:info@yoursite.com">info@fiberconstruct.de</a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Webseite</span><br><a href="#">fiberconstruct.de</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-12 d-flex align-items-stretch">
-                                <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h2 class="mb-4">Kontaktieren Sie uns</h2>
-                                    {{msg}}
-                                    <!--<div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                        Your message was sent, thank you!
-                                    </div>-->
-                                    <form method="POST" id="contactForm" name="contactForm" action="send">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="firstname"
-                                                           id="firstname"
-                                                           placeholder="Vorname">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="lastname"
-                                                           id="lastname"
-                                                           placeholder="Nachname">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="mail" id="mail"
-                                                           placeholder="E-Mail">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject"
-                                                           id="subject"
-                                                           placeholder="Betreff">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
-                                                              rows="7" placeholder="Nachricht"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <!--<input type="submit" value="Send Message" class="btn btn-primary">-->
-                                                    <!--<button type="submit">Submit</button>-->
-                                                    <div class="elementbuttonContact module submitting" role="button"
-                                                         type="submit" onclick="document.forms[0].submit()">
-                                                        <div style="flex-direction: column">
-                                                            <div class="phrase"
-                                                                 style="align-content: center; align-items: center;">
-                                                                <div class="line7">N</div>
-                                                                <div class="line7">a</div>
-                                                                <div class="line7">c</div>
-                                                                <div class="line7">h</div>
-                                                                <div class="line7">r</div>
-                                                                <div class="line7">i</div>
-                                                                <div class="line7">c</div>
-                                                                <div class="line7">h</div>
-                                                                <div class="line7">t</div>
-                                                                <div class="space"></div>
-                                                                <div class="line7">s</div>
-                                                                <div class="line7">e</div>
-                                                                <div class="line7">n</div>
-                                                                <div class="line7">d</div>
-                                                                <div class="line7">e</div>
-                                                                <div class="line7">n</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--<a class="elementbuttonContact" href="#" role="button">Nachricht
-                                                        senden</a>
-                                                    <div class="submitting"></div>-->
-                                                </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 d-flex align-items-stretch">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h2 class="mb-4">Kontaktieren Sie uns</h2>
+                                {{msg}}
+                                <!--<div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    Your message was sent, thank you!
+                                </div>-->
+                                <form method="POST" id="contactForm" name="contactForm" action="send">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="firstname"
+                                                       id="firstname"
+                                                       placeholder="Vorname">
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="lastname"
+                                                       id="lastname"
+                                                       placeholder="Nachname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="mail" id="mail"
+                                                       placeholder="E-Mail">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="subject"
+                                                       id="subject"
+                                                       placeholder="Betreff">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                              rows="7" placeholder="Nachricht"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <!--<input type="submit" value="Send Message" class="btn btn-primary">-->
+                                                <!--<button type="submit">Submit</button>-->
+                                                <div class="elementbuttonContact module submitting" role="button"
+                                                     type="submit" onclick="document.forms[0].submit()">
+                                                    <div style="flex-direction: column">
+                                                        <div class="phrase"
+                                                             style="align-content: center; align-items: center;">
+                                                            <div class="line7">N</div>
+                                                            <div class="line7">a</div>
+                                                            <div class="line7">c</div>
+                                                            <div class="line7">h</div>
+                                                            <div class="line7">r</div>
+                                                            <div class="line7">i</div>
+                                                            <div class="line7">c</div>
+                                                            <div class="line7">h</div>
+                                                            <div class="line7">t</div>
+                                                            <div class="space"></div>
+                                                            <div class="line7">s</div>
+                                                            <div class="line7">e</div>
+                                                            <div class="line7">n</div>
+                                                            <div class="line7">d</div>
+                                                            <div class="line7">e</div>
+                                                            <div class="line7">n</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--<a class="elementbuttonContact" href="#" role="button">Nachricht
+                                                    senden</a>
+                                                <div class="submitting"></div>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Call and Calender Button -->
+<div>
+    <!-- Mobil Call Button -->
+    <div>
+        <div>
+            <a class="callButton" onclick="phoneFunction(this)" target="_blank">
+                <i class="fa fa-phone phoneCallButton" id="phone"></i>
+                <img src="assets/x-solid.png" class="xImageSize" style="color: white;" id="xPhone">
+                <!--<i class="fa-solid fa-x" id="xPhone"></i>-->
+            </a>
+            <a href="https://calendly.com/bob-immo-konzept/30min" target="_blank">
+                <span class="callBackMobil" id="callBackMobil">R&uuml;ckruf vereinbaren</span>
+            </a>
+            <a href="tel:+4984149399122">
+                <span class="callNowMobil" id="callNowMobil">Jetzt anrufen</span>
+            </a>
+        </div>
+    </div>
+    <!-- Tablet & Desktop Calender Button -->
+    <div>
+        <a href="https://calendly.com/bob-immo-konzept/30min" class="calenderButton" target="_blank">
+            <i class="fa fa-calendar calenderIcon" id="calender"></i>
+            <!--<img src="assets/x-solid.png" class="xImageSize" id="xDesktop">-->
+            <!--<i class="fa-solid fa-x" id="xDesktop"></i>-->
+        </a>
+        <a href="https://calendly.com/bob-immo-konzept/30min" target="_blank">
+            <span class="callBackDesktop" id="callBackDesktop">R&uuml;ckruf vereinbaren</span>
+        </a>
+    </div>
 </div>
 <footer id="footer" class="footer">
     <!--<div class="elementbutton">Test</div>-->
     <div class="footerBottomLinksContainer">
-        <a style="margin-right: 20px" href="#">
+        <a style="margin-right: 20px" href="#" target="_blank">
             <i class="fa fa-facebook"></i>
         </a>
-        <a style="margin-left: 20px; margin-right: 20px" href="#">
+        <a style="margin-left: 20px; margin-right: 20px" href="#" target="_blank">
             <i class="fa fa-instagram"></i>
         </a>
-        <a style="margin-left: 20px" href="#">
+        <a style="margin-left: 20px" href="https://www.linkedin.com/company/fiber-construct-gmbh/" target="_blank">
             <i class="fa fa-linkedin"></i>
         </a>
     </div>
@@ -434,7 +471,6 @@
     <div class="copyright">
         <p>Made with ❤ in Ingolstadt by</p>
         <p><a href="https://region10.group/" target="_blank">REGION10 GROUP GmbH</a></p>
-        <p></p>
         <p>© 2021 -
             <script>document.write(new Date().getFullYear())</script>
             Fiber Construct.
