@@ -1,9 +1,169 @@
 @media only screen and (max-width: 767px) {
+    .powerCableButton {
+        left: 45% !important;
+    }
+
+    .powerCableButtonText {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-bottom: 95px;
+        z-index: 2 !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+    }
+
+    /* Begin Fade in Title & Text */
+    .fade-in-title {
+        display: inline-block;
+        animation: fadeIn-title linear 2s;
+        -webkit-animation: fadeIn-title linear 2s;
+        -moz-animation: fadeIn-title linear 2s;
+        -o-animation: fadeIn-title linear 2s;
+    }
+
+    .fade-in-text {
+        display: inline-block;
+        animation-delay: 6s;
+        animation: fadeIn-text linear 2s;
+        -webkit-animation: fadeIn-text linear 2s;
+        -moz-animation: fadeIn-text linear 2s;
+        -o-animation: fadeIn-text linear 2s;
+    }
+
+    @keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 25%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 25%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 25%;
+        }
+    }
+
+    @-o-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 25%;
+        }
+    }
+
+    @keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 30%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 30%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 30%;
+        }
+    }
+
+    @-o-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 30%;
+        }
+    }
+    /* End Fade in Title & Text */
+    .navLogo img {
+        height: 150px;
+        transition: height 0.4s;
+    }
+
     .marketing {
         margin-top: 100px;
         background-color: #3d3d3d;
-        padding-top: 50px!important;
-        padding-bottom: 50px!important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 
     .about-image {
@@ -26,6 +186,8 @@
         cursor: pointer;
         position: fixed;
         right: 0;
+        top: 0;
+        padding-top: 50px;
         z-index: 10002;
     }
 
@@ -75,13 +237,13 @@
 
     .contact-wrap input {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
     .contact-wrap textarea {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
@@ -140,7 +302,7 @@
 
     #video-hero {
         max-width: 100%;
-        margin-top: -150px;
+        margin-top: -170px;
         z-index: -100;
         display: block;
         width: 100%;
@@ -283,8 +445,8 @@
         background-color: #fbb900;
         border: none;
         color: white;
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
@@ -315,7 +477,7 @@
         z-index: 10000 !important;
     }
 
-    .phoneCallButton{
+    .phoneCallButton {
         position: absolute;
         bottom: 10px;
         right: 10px;
@@ -390,8 +552,8 @@
         background-color: #fbb900;
         border: none;
         color: white;
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
@@ -452,8 +614,8 @@
         padding: 5px;
     }
 
-    .calenderIcon{
-        font-size: 30px!important;
+    .calenderIcon {
+        font-size: 30px !important;
         position: absolute;
         bottom: 10px;
         right: 12px;
@@ -462,24 +624,92 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .powerCableButton {
+        left: 46% !important;
+    }
+
+    .powerCableButtonText {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 44%;
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-bottom: 95px;
+        z-index: 2 !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+    }
+
+    .navLogo img {
+        height: 150px;
+        transition: height 0.4s;
+    }
+
+    #video-hero {
+        max-width: 100%;
+        margin-top: -170px;
+        z-index: -100;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+    }
+
     .marketing {
         margin-top: 100px;
         background-color: #3d3d3d;
-        padding-top: 50px!important;
-        padding-bottom: 50px!important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+    .navLogo img {
+        height: 300px;
+        transition: height 0.4s;
+    }
+
     .marketing {
         margin-top: 100px;
         background-color: #3d3d3d;
-        padding-top: 50px!important;
-        padding-bottom: 50px!important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .powerCableButton {
+        left: 47% !important;
+    }
+
+    .powerCableButtonText {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-bottom: 95px;
+        z-index: 2 !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+    }
+
+    #video-hero {
+        max-width: 100%;
+        margin-top: -320px;
+        z-index: -100;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+    }
+
     .marketing_text {
         height: 300px;
     }
@@ -498,6 +728,144 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    /* Begin Fade in Title & Text */
+    .fade-in-title {
+        display: inline-block;
+        animation: fadeIn-title linear 2s;
+        -webkit-animation: fadeIn-title linear 2s;
+        -moz-animation: fadeIn-title linear 2s;
+        -o-animation: fadeIn-title linear 2s;
+    }
+
+    .fade-in-text {
+        display: inline-block;
+        animation-delay: 6s;
+        animation: fadeIn-text linear 2s;
+        -webkit-animation: fadeIn-text linear 2s;
+        -moz-animation: fadeIn-text linear 2s;
+        -o-animation: fadeIn-text linear 2s;
+    }
+
+    @keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 35%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 35%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 35%;
+        }
+    }
+
+    @-o-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 35%;
+        }
+    }
+
+    @keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-o-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+    /* End Fade in Title & Text */
     .about-image {
         min-width: 400px;
         min-height: auto;
@@ -520,6 +888,8 @@
         cursor: pointer;
         position: fixed;
         right: 0;
+        top: 0;
+        padding-top: 50px;
         z-index: 10002;
     }
 
@@ -569,13 +939,13 @@
 
     .contact-wrap input {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
     .contact-wrap textarea {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
@@ -591,18 +961,6 @@
     .belowLawSites h3 {
         color: #fbb900;
         font-size: 25px;
-    }
-
-    #video-hero {
-        max-width: 100%;
-        margin-top: -150px;
-        z-index: -100;
-        display: block;
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        overflow: hidden;
-        background-size: contain;
     }
 
     .centered-video-title {
@@ -753,6 +1111,161 @@
 }
 
 @media only screen and (min-width: 1201px) {
+    .powerCableButton {
+        left: 50% !important;
+    }
+
+    .powerCableButtonText {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 49%;
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-bottom: 95px;
+        z-index: 2 !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+    }
+
+    /* Begin Fade in Title & Text */
+    .fade-in-title {
+        display: inline-block;
+        animation: fadeIn-title linear 2s;
+        -webkit-animation: fadeIn-title linear 2s;
+        -moz-animation: fadeIn-title linear 2s;
+        -o-animation: fadeIn-title linear 2s;
+    }
+
+    .fade-in-text {
+        display: inline-block;
+        animation-delay: 6s;
+        animation: fadeIn-text linear 2s;
+        -webkit-animation: fadeIn-text linear 2s;
+        -moz-animation: fadeIn-text linear 2s;
+        -o-animation: fadeIn-text linear 2s;
+    }
+
+    @keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @-o-keyframes fadeIn-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 40%;
+        }
+    }
+
+    @keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 50%;
+        }
+    }
+
+    @-moz-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 50%;
+        }
+    }
+
+    @-webkit-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 50%;
+        }
+    }
+
+    @-o-keyframes fadeIn-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        from {
+            top: 80%;
+        }
+        to {
+            top: 50%;
+        }
+    }
+    /* End Fade in Title & Text */
     .about-image {
         min-width: 400px;
         min-height: auto;
@@ -775,6 +1288,8 @@
         cursor: pointer;
         position: fixed;
         right: 0;
+        top: 0;
+        padding-top: 50px;
         z-index: 10002;
     }
 
@@ -824,13 +1339,13 @@
 
     .contact-wrap input {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
     .contact-wrap textarea {
         font-size: 20px;
-        background-color: #3d3d3d!important;
+        background-color: #3d3d3d !important;
         color: #FFFFFF;
     }
 
@@ -850,7 +1365,7 @@
 
     #video-hero {
         max-width: 100%;
-        margin-top: -150px;
+        margin-top: -320px;
         z-index: -100;
         display: block;
         width: 100%;
@@ -1010,7 +1525,7 @@
 @media only screen and (min-width: 2500px) {
     #video-hero {
         max-width: 100%;
-        margin-top: -150px;
+        margin-top: -320px;
         z-index: -100;
         display: block;
         width: 100%;
@@ -1031,19 +1546,164 @@
     font-family: ProximaNovaBold;
     src: url("../fonts/proximanova-bold.otf") format("otf");
 }*/
+/*
+.shake {
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+.element {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+@keyframes shake-animation {
+    0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
+}
+*/
 
-.about-us-text{
-    width: 80%!important;
+
+.powerCableButton {
+    animation: shake 2.5s ease infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    background-color: #fbb900;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(0, 0)
+    }
+    1.78571% {
+        transform: translate(5px, 0)
+    }
+    3.57143% {
+        transform: translate(0, 0)
+    }
+    5.35714% {
+        transform: translate(5px, 0)
+    }
+    7.14286% {
+        transform: translate(0, 0)
+    }
+    8.92857% {
+        transform: translate(5px, 0)
+    }
+    10.71429% {
+        transform: translate(0, 0)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+
+    /*0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }*/
+}
+
+
+.elementbuttonContactSubmit {
+    border-radius: 32px;
+    background: linear-gradient(145deg, #2b2b2b, #333333);
+    box-shadow: 12px 12px 24px #292929,
+    -12px -12px 24px #373737;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    width: 180px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: none!important;
+    color: #fbb900!important;
+}
+
+.elementbuttonContactSubmit:active {
+    border-radius: 32px;
+    background: #303030;
+    box-shadow: inset 12px 12px 24px #292929,
+    inset -12px -12px 24px #373737;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    width: 180px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: none!important;
+    color: #fbb900!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-us-text {
+    width: 80% !important;
     margin-left: auto;
     margin-right: auto;
 }
 
 .contact-wrap input:focus {
-    color:#FFFFFF!important;
+    color: #FFFFFF !important;
 }
 
 .contact-wrap textarea:focus {
-    color:#FFFFFF!important;
+    color: #FFFFFF !important;
 }
 
 .marketing_img_1 {
@@ -1100,9 +1760,9 @@
 
 .about-image {
     display: block;
-    width: 80%!important;
-    margin-left: auto!important;
-    margin-right: auto!important;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .marketing p {
@@ -1119,19 +1779,19 @@
     display: none;
 }
 
-.xImageSize{
+.xImageSize {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 30px!important;
-    height: 30px!important;
+    width: 30px !important;
+    height: 30px !important;
 }
 
-.callButton i:hover{
+.callButton i:hover {
     color: #FFFFFF;
 }
 
-.calenderButton i:hover{
+.calenderButton i:hover {
     color: #FFFFFF;
 }
 
@@ -1220,6 +1880,10 @@ body {
     font-size: 35px;
 }
 
+.footerSmallLine{
+    margin-bottom: 20px!important;
+}
+
 .headTitleText {
     width: 80%;
     margin-left: auto;
@@ -1231,6 +1895,7 @@ body {
 
 .copyright {
     margin-bottom: 50px;
+    line-height: 1!important;
 }
 
 .headTitleText h1 {
@@ -1299,7 +1964,7 @@ body a:hover {
 }*/
 
 .centerIconImage {
-    width: 60px;
+    width: 55px;
     height: auto;
     margin: 0;
     position: absolute;
@@ -1311,7 +1976,20 @@ body a:hover {
     color: #fbb900;
 }
 
-.centerIconImageCrane{
+.centerIconImagePowerCable {
+    width: 40px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fbb900;
+}
+
+.centerIconImageCrane {
     width: 70px;
     height: auto;
     margin: 0;
@@ -1325,13 +2003,13 @@ body a:hover {
 }
 
 .about {
-    padding-top: 50px!important;
-    padding-bottom: 50px!important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
 
 .marketing_container {
-    padding-left: 50px!important;
-    padding-right: 50px!important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
 }
 
 .center i {
@@ -1430,7 +2108,7 @@ h2 {
 #video {
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 /* nav styles */
@@ -1538,11 +2216,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navLogo img {
-    height: 120px;
-    transition: height 0.4s;
+    z-index: 2;
 }
 
 #nav.fixed {
@@ -1603,10 +2277,18 @@ h2 {
 
 @media (min-width: 992px) {
     .info-wrap {
-        margin-top: -20px;
-        margin-bottom: -20px;
+        margin-top: 50px;
+        margin-bottom: 100px;
         border-radius: 5px;
     }
+}
+
+.contactHeadline {
+    margin-bottom: 2.8rem !important;
+}
+
+.contactInfoHeadline {
+    margin-bottom: 2.5rem !important;
 }
 
 .about {

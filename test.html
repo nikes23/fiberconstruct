@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://kit.fontawesome.com/ad1e9f7653.js" crossorigin="anonymous"></script>
+    <style>
+        @media only screen and (max-width: 768px) {
+            .callButton {
+                display: inline-block;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                width:50px;
+                height:50px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                z-index: 10000 !important;
+            }
+
+            /*.callButton {
+                display: inline-block;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                padding: 12px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                z-index: 10000 !important;
+            }*/
+
+            .calenderButton {
+                display: none;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                z-index: 10000 !important;
+            }
+
+            .phoneCallButton{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-size: 30px;
+                color: #FFFFFF;
+            }
+
+            .callBackMobil {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 18px;
+                margin-right: 80px;
+                margin-bottom: 30px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+
+            .callNowMobil {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 18px;
+                margin-right: 20px;
+                margin-bottom: 80px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+
+            .callBackDesktop {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 21px;
+                margin-right: 110px;
+                margin-bottom: 55px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+        }
+
+        @media only screen and (min-width: 769px) {
+            .callButton {
+                display: none;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                z-index: 10000 !important;
+            }
+
+            .calenderButton {
+                display: inline-block;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                width:50px;
+                height:50px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                z-index: 10000 !important;
+            }
+
+            /*.calenderButton {
+                display: inline-block;
+                background-color: #6ec1e4;
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                z-index: 10000 !important;
+            }*/
+
+            .callButton i.fa {
+                font-size: 40px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .callBackMobil {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 18px;
+                margin-right: 80px;
+                margin-bottom: 30px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+
+            .callNowMobil {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 18px;
+                margin-right: 20px;
+                margin-bottom: 110px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+
+            .callBackDesktop {
+                display: inline-block;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                color: #FFFFFF;
+                font-size: 21px;
+                margin-right: 110px;
+                margin-bottom: 55px;
+                z-index: 10000 !important;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+            }
+
+            .calenderIcon{
+                font-size: 30px!important;
+                position: absolute;
+                bottom: 10px;
+                right: 12px;
+                color: #FFFFFF;
+            }
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .navbar li a {
+            font-size: 17px;
+        }
+
+        #xDesktop {
+            display: none;
+        }
+
+        #xPhone {
+            display: none;
+        }
+
+        .xImageSize{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 30px!important;
+            height: 30px!important;
+        }
+
+        .callButton i:hover{
+            color: #FFFFFF;
+        }
+
+        .calenderButton i:hover{
+            color: #FFFFFF;
+        }
+
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><img src="assets/img.png" height="80px;"></a>
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>-->
+    <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ÜBER UNS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">LEISTUNGEN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PROJEKTE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">REFERENZEN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PARTNER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">KONTAKT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Call and Calender Button -->
+<div>
+    <!-- Mobil Call Button -->
+    <div>
+        <div>
+            <a class="callButton" onclick="phoneFunction(this)" target="_blank">
+                <i class="fa fa-phone phoneCallButton" id="phone"></i>
+                <img src="assets/x-solid.png" class="xImageSize" style="color: white;" id="xPhone">
+                <!--<i class="fa-solid fa-x" id="xPhone"></i>-->
+            </a>
+            <a href="https://calendly.com/bob-immo-konzept/30min" target="_blank">
+                <span class="callBackMobil" id="callBackMobil">R&uuml;ckruf vereinbaren</span>
+            </a>
+            <a href="tel:+493051695840">
+                <span class="callNowMobil" id="callNowMobil">Jetzt anrufen</span>
+            </a>
+        </div>
+    </div>
+    <!-- Tablet & Desktop Calender Button -->
+    <div>
+        <a href="https://calendly.com/bob-immo-konzept/30min" class="calenderButton" target="_blank">
+            <i class="fa fa-calendar calenderIcon" id="calender"></i>
+            <!--<img src="https://bob-planung-management.de/wp-content/uploads/2022/02/x-solid.svg" class="xImageSize" id="xDesktop">-->
+            <!--<i class="fa-solid fa-x" id="xDesktop"></i>-->
+        </a>
+        <a href="https://calendly.com/bob-immo-konzept/30min" target="_blank">
+            <span class="callBackDesktop" id="callBackDesktop">R&uuml;ckruf vereinbaren</span>
+        </a>
+    </div>
+</div>
+<script>
+    //Mobile Variable
+    const phoneCall = document.getElementById("phone");
+    const xPhone = document.getElementById("xPhone");
+    const callBackMobil = document.getElementById("callBackMobil");
+    const callNowMobil = document.getElementById("callNowMobil");
+    //Tablet + Desktop Variable
+    const calender = document.getElementById("calender");
+    const xDesktop = document.getElementById("xDesktop");
+    //const callBackDesktop = document.getElementById("callBackDesktop");
+
+    //Change Button Icon and remove Textfields
+    window.addEventListener('resize', function() {
+        callBackMobil.style.display = 'none';
+        callNowMobil.style.display = 'none';
+        //callBackDesktop.style.display = 'none';
+
+        if(xPhone.style.display === 'inline-block'){
+            xPhone.style.display = 'none';
+            phoneCall.style.display = 'inline-block';
+        } else if(xDesktop.style.display === 'inline-block'){
+            xDesktop.style.display = 'none';
+            calender.style.display = 'inline-block';
+        } else{
+            return true;
+        }
+    });
+
+    //Show and hide Textfields on Smartphone and change Button Icon
+    function phoneFunction(x) {
+        if (phoneCall.style.display === 'none') {
+            x.classList.toggle("change");
+            xPhone.style.display = 'none';
+            callBackMobil.style.display = 'none';
+            callNowMobil.style.display = 'none';
+            phoneCall.style.display = 'inline-block';
+        } else {
+            x.classList.toggle("change");
+            xPhone.style.display = 'inline-block';
+            callBackMobil.style.display = 'inline-block';
+            callNowMobil.style.display = 'inline-block';
+            phoneCall.style.display = 'none';
+        }
+    }
+
+    //Show and hide Textfields on Tablet/Desktop and change Button Icon
+    /*function calenderFunction(x) {
+        if (calender.style.display === 'none') {
+            x.classList.toggle("change");
+            xDesktop.style.display = 'none';
+            callBackDesktop.style.display = 'none';
+            calender.style.display = 'inline-block';
+        } else {
+            x.classList.toggle("change");
+            xDesktop.style.display = 'inline-block';
+            callBackDesktop.style.display = 'inline-block';
+            calender.style.display = 'none';
+        }
+    }*/
+
+
+    /*document.querySelector('.navbar-toggler').addEventListener(event => {
+        document.getElementsByClassName("navbar")[0].style.background = "rgba(0,0,0,1)!important";
+
+    });*/
+</script>
+</body>
+</html>
