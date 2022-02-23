@@ -1,13 +1,14 @@
 @media only screen and (max-width: 767px) {
     .powerCableButton {
-        left: 45% !important;
+        left: 43% !important;
+        margin-bottom: 95px!important;
     }
 
     .powerCableButtonText {
         display: block;
         position: absolute;
-        bottom: 0;
-        left: 42%;
+        bottom: 75px;
+        left: 39%;
         color: #FFFFFF;
         font-size: 18px;
         margin-bottom: 95px;
@@ -275,7 +276,7 @@
     }
 
     .centered-video-title {
-        line-height: 200%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -288,7 +289,7 @@
     }
 
     .centered-video-text {
-        line-height: 160%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -670,6 +671,8 @@
     .navLogo img {
         height: 300px;
         transition: height 0.4s;
+        margin-top: -50px;
+        margin-bottom: 50px;
     }
 
     .marketing {
@@ -964,7 +967,7 @@
     }
 
     .centered-video-title {
-        line-height: 200%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -977,7 +980,7 @@
     }
 
     .centered-video-text {
-        line-height: 160%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -1536,7 +1539,6 @@
     }
 }
 
-
 /*@font-face {
     font-family: ProximaNovaMedium;
     src: url("../fonts/Proxima-Nova-Medium.otf") format("otf");
@@ -1569,6 +1571,9 @@
 }
 */
 
+html {
+    scroll-behavior: smooth;
+}
 
 .powerCableButton {
     animation: shake 2.5s ease infinite;
@@ -1677,20 +1682,6 @@
     border: none!important;
     color: #fbb900!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about-us-text {
     width: 80% !important;
@@ -2124,7 +2115,6 @@ h2 {
 .logo {
     font-size: 1.8rem;
     color: rgb(5, 5, 116);
-    padding-left: 20px;
 }
 
 .nav__link {
