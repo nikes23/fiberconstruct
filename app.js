@@ -37,6 +37,14 @@ app.get('/', (req, res) => {
     res.render('main', {layout: 'index'});
 });
 
+app.get('/datenschutz', (req, res) => {
+    res.render('main', {layout: 'datenschutz'});
+});
+
+app.get('/impressum', (req, res) => {
+    res.render('main', {layout: 'impressum'});
+});
+
 app.post('/send', urlencodedParser,[
     check('firstname', 'Der Vorname muss mindestens 3 Buchstaben lang sein')
         .exists()
@@ -117,22 +125,17 @@ app.post('/send', urlencodedParser,[
 
     const transport = nodemailer.createTransport({
         host: "smtp.strato.de",
-        //host: "smtp-mail.outlook.com",
-        //port: 587,
         port: 465,
         auth: {
-            //user: "anton.kempf@hotmail.com",
-            //pass: "34>*7R6g77V?6@"
             user: "webmaster@fiberconstruct.de",
             pass: "cnu@GBW2ahc_wrw*uhb",
-
         }
     });
 
     const mailOptions = {
-        from: '"Example Team" <anton.kempf@hotmail.com>',
+        from: '"Fiber Construct Team" <webmaster@fiberconstruct.de>',
         //from: req.body.mail,
-        to: 'info@fiberconstruct.de, nikes23@hotmail.de',
+        to: 'info@fiberconstruct.de',
         subject: 'Neue Nachricht vom Kontaktformular',
         text: '',
         html: output,
@@ -150,13 +153,10 @@ app.post('/send', urlencodedParser,[
         if (error) {
             return console.log(error);
         }
-        console.log('Message sent: %s', info.messageId);
-        res.render('main', {layout: 'index', msg:'Email has been sent'});
+        console.log('Nachricht gesendet: %s', info.messageId);
+        res.render('main', {layout: 'index', msg:'E-Mail wurde gesendet'});
         res.send('success')
     });
-
-
-
 });
 
 app.listen(port, () => console.log('Server started on port: ' + port));
