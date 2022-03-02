@@ -21,9 +21,13 @@
     <meta name="msapplication-square150x150logo" content="icons/150.png">
     <meta name="msapplication-wide310x150logo" content="icons/310x150.png">
     <meta name="msapplication-square310x310logo" content="icons/310.png">
+    <!-- We include the API -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-min.js"></script>
+    <!-- We include the API's easing library (this is optional) -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-ease-functions-min.js"></script>
     <!--<link href="style/fontawesome/css/all.css" rel="stylesheet">-->
 </head>
-<body ontouchstart="">
+<body ontouchstart="" onload="init()">
 <header>
     <nav class="nav" id="nav">
         <div class="navLogo">
@@ -44,24 +48,23 @@
                 </a>
             </div>
             <div class="navElements" onclick="myFunction(this)">
-                <a href="#">Start</a>
-                <a href="#about">Über Uns</a>
-                <a href="#why-us">Leistungen</a>
-                <a href="#contact">Kontakt</a>
+                <a href="#" onclick="closeNavLayer()">Start</a>
+                <a href="#about" onclick="closeNavLayer()">Über Uns</a>
+                <a href="#why-us" onclick="closeNavLayer()">Leistungen</a>
+                <a href="#contact" onclick="closeNavLayer()">Kontakt</a>
             </div>
         </div>
     </nav>
 </header>
 <div class="container-hero" id="video">
     <video autoplay loop muted playsinline preload poster id="video-hero">
-        <source src="assets/Fiber_Costruct_Website_Video.mp4" type="video/mp4"/>
-        <source src="assets/Fiber_Costruct_Website_Video.webm" type="video/webm"/>
+        <source src="assets/FiberConstruct_Trailer_720.mp4" type="video/mp4"/>
         <img alt="Fiber Construct" src="assets/Standbild_FiberConstruct_Video.png" width="100%"
              height="auto"/>
     </video>
     <div class="layer-hero">
-        <div class="module" style="width: 100%; height: 100%; z-index: 40000000;">
-            <h1 class="centered-video-title fade-in-title">Wir errichten die Netz-Infrastruktur von und für morgen.</h1>
+        <div class="" style="width: 100%; height: 100%; z-index: 40000000;">
+            <h1 class="centered-video-title fade-in-title">Wir errichten die Netzinfrastruktur von und für morgen.</h1>
             <p class="centered-video-text fade-in-text">Anschlussfertig, ganzheitlich und aus einer Hand.</p>
         </div>
         <span class="powerCableButtonText">SPEED ON!</span>
@@ -82,14 +85,13 @@
                     <!--<iframe width="100%" height="400" src="https://www.youtube.com/embed/yFonv5hymTA?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=yFonv5hymTA" controls="0" loop="1" frameborder="0" allow="autoplay"></iframe>-->
                     <h2>&Uuml;ber FIBER CONSTRUCT</h2>
                     <p class="text-justify">
-                        Fiber ist das englische Wort für (Glas)Faser. Dementsprechend übernehmen wir die
-                        europaweite Planung von Netz-Infrastrukturen.
+                        Bei Fiber Construct arbeiten hoch qualifizierte und motivierte Persönlichkeiten an einer gemeineinsamen Mission:
+                    </p>
+                    <p class="text-justify">
+                        Jeden Haushalt in unserem Land mit einer ultraschnellen Datenleitung zu versorgen.
                     </p>
                     <p class="text-justify" style="margin-bottom: 40px;">
-                        Beginnend mit der ersten Phase Ihres Vorhabens beraten und unterstützen wir Sie, damit von
-                        Beginn an alles richtig abläuft. Wir demonstrieren Ihnen passende Möglichkeiten für die
-                        Umsetzung Ihres Glasfaser-Projekts, während die jeweiligen örtlichen Anforderungen beachtet
-                        werden. Mit uns schöpfen Sie bis zum Ende das volle Potenzial aus.
+                        Dementsprechend übernehmen wir deutschlandweit die Realisierung von Netzinfrastrukturen und Telekommunikationstrassen. Unser Team steht Ihnen mit unserer langjährigen Erfahrung in der frühen Phase des Vorhabens beratend zur Seite, um von Anfang an alles richtig zu machen. Anschließend übernehmen wir umfassende Planungsleistungen, die Realisierung des Projektes inklusive der notwendigen Bauleistungen sowie die abschließende Dokumentation nach den relevanten Vorgaben.
                     </p>
                 </div>
             </div>
@@ -233,13 +235,24 @@
             <div class="center"><i class="fa fa-handshake"></i></div>
             <h2>Beratung</h2>
             <p class="marketing_text">Unsere Experten beraten Sie zu allen Fragestellungen rund um das Thema
-                Breitbandausbau, sowie die dafür
-                infrage kommenden Förderprogramme. Wir begleiten Städte und Gemeinde bei einem flächendeckenden Ausbau
-                der Netzinfrastruktur und sehen in einer individuellen und erstklassigen Beratung den Grundstein für ein
-                gelungenes Projekt.
+                Breitbandausbau, sowie die dafür infrage kommenden Förderprogramme. Wir begleiten Städte und Gemeinde
+                bei einem flächendeckenden Ausbau der Netzinfrastruktur und sehen in einer individuellen und
+                erstklassigen Beratung den Grundstein für ein gelungenes Projekt.
             </p>
             <img class="img-fluid marketing_img_1" alt="Generic placeholder image"
-                 src="assets/img_5.png">
+                 src="assets/beratung.jpg">
+            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
+        </div>
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center"><i class="fa fa-file-signature"></i></div>
+            <h2>Dokumentation</h2>
+            <p class="marketing_text">Die Dokumentation der einzelnen abgeschlossenen Bauvorhaben übernahmen wir
+                fachgerecht, schnell und zuverlässig. Unsere Dokumentatoren stellen auf Basis des technischen
+                Expertenwissens eine hochwertige und fehlerfreie Datenerfassung sicher, welche sie in den
+                verschiedenen Geoinformationssystemen erfassen.
+            </p>
+            <img class="img-fluid marketing_img_4" alt="Generic placeholder image"
+                 src="assets/img_3.png">
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
         <div class="col-xl-6 col-lg-6 module marketing_container">
@@ -248,10 +261,13 @@
             </div>
             <h2>Planung und Wegesicherung</h2>
             <p class="marketing_text">In der Grobplanung planen wir den möglichen Verlauf der Telekommunikationstrassen.
-                Auf dieser Basis
-                begleiten wir Sie bei allen Schritten bis zur vollumfänglichen behördlichen Genehmigung des Vorhabens.
-                In der technischen Planung erstellen wir alle Kalkulations- und Netzplanungsunterlagen sowie alle
-                notwendigen Unterlagen für die Bauausführung.
+                Auf dieser Basis begleiten wir Sie bei allen Schritten bis zur vollumfänglichen Genehmigung des
+                Vorhabens. Dabei gehen wir die notwendige Antragsstellung mit allen relevanten Behörden in den
+                Austausch. Vor Ort verschaffen wir uns gemeinsam mit den zuständigen Wegeunterhaltspflichtigen einen
+                Überblick und erarbeiten im Dialog den für alle Seiten optimalen Trassenverlauf. In der technischen
+                Planung erstellen wir alle Kalkulations- und Netzplanungsunterlagen sowie alle notwendigen Unterlagen
+                für die Bauausführung. Wir setzen stets auf die neusten und innovativsten Methoden und Tools und
+                können aufgrund unserer stetigen Weiterentwicklung in Projektplanung höchstes Niveau garantieren.
             </p>
             <img class="img-fluid marketing_img_2" alt="Generic placeholder image"
                  src="assets/img_1.png">
@@ -261,27 +277,16 @@
             <div class="center">
                 <img src="assets/crane.png" class="centerIconImageCrane">
             </div>
-            <h2>Baubegleitung</h2>
-            <p class="marketing_text">Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort und können die zum Teil sehr
-                komplexen
-                Tiefbaumaßnahmen auf Basis alternativer Verlegemethoden vollumfänglich übernehmen. Neben Organisation
-                und Koordination übernehmen wir auch die Überwachung der einzelnen Teilbereiche des Baus. Zudem
-                übernehmen wir auch die fachgerechte Montage und korrekte Vermessung.
+            <h2>Realisierung</h2>
+            <p class="marketing_text">Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort und können die zum Teil
+                sehr komplexen Tiefbaumaßnahmen auf Basis alternativer Verlegemethoden vollumfänglich über&shy;neh&shy;men.
+                Neben Or&shy;ganisation und Koordination übernehmen wir auch die Überwachung der einzelnen Teilbereiche
+                des Baus. Hierzu zählen unter anderem das Überwachen des gesamten Baus, die Einhaltung jeglicher
+                Vorschriften bei der Bauausführung, aber auch die Abnahme und Dokumentation in der Umfassung der
+                Rotberichtigung. Zudem übernehmen wir auch die fachgerechte Montage und korrekte Vermessung.
             </p>
             <img class="img-fluid marketing_img_3" alt="Generic placeholder image"
-                 src="assets/img.png">
-            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
-        </div>
-        <div class="col-xl-6 col-lg-6 module marketing_container">
-            <div class="center"><i class="fa fa-file-signature"></i></div>
-            <h2>Dokumentation</h2>
-            <p class="marketing_text">Die Dokumentation der einzelnen abgeschlossenen Bauvorhaben übernahmen wir
-                fachgerecht, schnell und
-                zuverlässig. Unsere Dokumentatoren stellen auf Basis des technischen Expertenwissens eine hochwertige
-                und fehlerfreie Datenerfassung sicher, welche sie in den verschiedenen Geoinformationssystemen erfassen.
-            </p>
-            <img class="img-fluid marketing_img_4" alt="Generic placeholder image"
-                 src="assets/img_3.png">
+                 src="assets/realisierung.jpg">
             <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
         </div>
     </div>
@@ -382,6 +387,17 @@
                                             <div class="form-group">
                                                     <textarea name="message" class="form-control" id="message" cols="30"
                                                               rows="7" placeholder="Nachricht" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group" style="display:flex; flex-direction: row; justify-content: flex-end; align-items: baseline;">
+                                                <input type="checkbox" name="datenschutzCheckBox"
+                                                       value="datenschutzCheckBox" id="datenschutzCheckBox" required style="margin-right: 20px!important;">
+                                                <label for="datenschutzCheckBox" style="color: white; text-align: justify; font-size: 12px;">
+                                                    Ich habe die <a href="datenschutz.html" style="font-size: 12px!important;">Datenschutzerklärung</a> zur Kenntnis genommen und
+                                                    akzeptiert. Ich stimme zu, dass meine Formularangaben zur
+                                                    Kontaktaufnahme bzw. zur Bearbeitung meines Anliegens gespeichert
+                                                    werden.</label>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -493,96 +509,5 @@
     </div>
 </footer>
 <script type="text/javascript" src="js/main.js"></script>
-<script>
-    (function ($) {
-
-        /**
-         * Copyright 2012, Digital Fusion
-         * Licensed under the MIT license.
-         * http://teamdf.com/jquery-plugins/license/
-         *
-         * @author Sam Sehnert
-         * @desc A small plugin that checks whether elements are within
-         *     the user visible viewport of a web browser.
-         *     only accounts for vertical position, not horizontal.
-         */
-
-        $.fn.visible = function (partial) {
-
-            var $t = $(this),
-                $w = $(window),
-                viewTop = $w.scrollTop(),
-                viewBottom = viewTop + $w.height(),
-                _top = $t.offset().top,
-                _bottom = _top + $t.height(),
-                compareTop = partial === true ? _bottom : _top,
-                compareBottom = partial === true ? _top : _bottom;
-
-            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-        };
-
-    })(jQuery);
-
-    var win = $(window);
-    var allMods = $(".module");
-
-    // Already visible modules
-    allMods.each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("already-visible");
-        }
-    });
-
-    win.scroll(function (event) {
-
-        allMods.each(function (i, el) {
-            var el = $(el);
-            if (el.visible(true)) {
-                el.addClass("come-in");
-            }
-        });
-
-    });
-
-
-    const contactForm = document.querySelector('.contactForm');
-    let firstname = document.getElementById('firstname');
-    let lastname = document.getElementById('lastname');
-    let mail = document.getElementById('mail');
-    let subject = document.getElementById('subject');
-    let message = document.getElementById('message');
-
-    contactForm.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        let formData = {
-            firstname: firstname.value,
-            lastname: lastname.value,
-            mail: mail.value,
-            subject: subject.value,
-            message: message.value
-        }
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/');
-        xhr.setRequestHeader('content-type', 'application/json');
-        xhr.onload = function (){
-            console.log(xhr.responseText);
-            if(xhr.responseText == 'success'){
-                alert('Die Nachricht wurde erfolgreich gesendet');
-                firstname.value = '';
-                lastname.value = '';
-                mail.value = '';
-                subject.value = '';
-                message.value = '';
-            } else {
-                alert('Etwas ist schief gegangen')
-            }
-        }
-
-        xhr.send(JSON.stringify(formData));
-    })
-
-</script>
 </body>
 </html>

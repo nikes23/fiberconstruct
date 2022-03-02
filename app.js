@@ -51,15 +51,12 @@ app.post('/send', urlencodedParser,[
 
     console.log(req.body)
 
-
-
-
+    const booleanSell = !!req.body.datenschutzCheckBox;
+    console.log(booleanSell)
 
     const errors = validationResult(req)
     if(!errors.isEmpty()){
-
     }
-
 
     const output = `
     <p>Sie haben eine neue Kontaktaufnahme erhalten.</p>
@@ -69,6 +66,7 @@ app.post('/send', urlencodedParser,[
     <li>Nachname: ${req.body.lastname}</li>
     <li>E-Mail: ${req.body.mail}</li>
     <li>Betreff: ${req.body.subject}</li>
+    <li>Datenschutzerklärung: Akzeptiert</li>
     </ul>
     <h3>Nachricht:</h3>
     <p>${req.body.message}</p>
@@ -118,18 +116,23 @@ app.post('/send', urlencodedParser,[
 
 
     const transport = nodemailer.createTransport({
-        host: "smtp-mail.outlook.com",
-        port: 587,
+        host: "smtp.strato.de",
+        //host: "smtp-mail.outlook.com",
+        //port: 587,
+        port: 465,
         auth: {
-            user: "anton.kempf@hotmail.com",
-            pass: "34>*7R6g77V?6@"
+            //user: "anton.kempf@hotmail.com",
+            //pass: "34>*7R6g77V?6@"
+            user: "webmaster@fiberconstruct.de",
+            pass: "cnu@GBW2ahc_wrw*uhb",
+
         }
     });
 
     const mailOptions = {
         from: '"Example Team" <anton.kempf@hotmail.com>',
         //from: req.body.mail,
-        to: 'anton.kempf@hotmail.com, nikes23@hotmail.de',
+        to: 'info@fiberconstruct.de, nikes23@hotmail.de',
         subject: 'Neue Nachricht vom Kontaktformular',
         text: '',
         html: output,
@@ -156,4 +159,4 @@ app.post('/send', urlencodedParser,[
 
 });
 
-app.listen(port, () => console.log('Server started...'));
+app.listen(port, () => console.log('Server started on port: ' + port));
