@@ -1842,6 +1842,113 @@
     scroll-behavior: smooth;
 }*/
 
+/* Start Cookiebot */
+
+#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonAccept, #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonAccept, #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+    background-color: #fbb900!important;
+    border-color: #fbb900!important;
+    color: #ffffff!important;
+}
+
+#CybotCookiebotDialog {
+    background-color: #3d3d3d !important;
+    border-radius: 8px;
+    box-shadow: 0 32px 68px rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+    color: #FFFFFF!important;
+    font-family: sans-serif;
+    font-size: 15px;
+    left: 50%;
+    letter-spacing: .1px;
+    line-height: 24px;
+    max-height: calc(100% - 16px);
+    overflow: hidden;
+    position: fixed;
+    text-align: initial;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+    transition-property: width, max-width, top, bottom, left, opacity;
+    width: calc(100% - 16px);
+    z-index: 2147483631;
+}
+
+#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink.CybotCookiebotDialogActive {
+    border-bottom: 1px solid #fbb900!important;
+    color: #fbb900!important;
+}
+
+#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink {
+    border-bottom: 1px solid #ffffff;
+    color: #FFFFFF!important;
+    display: block;
+    font-weight: 600;
+    height: 100%;
+    outline-offset: -5px;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton {
+    background-color: transparent;
+    border: 2px solid #FFFFFF!important;
+    border-radius: 0.25em;
+    color: #FFFFFF!important;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    padding: 1em;
+    user-select: none;
+    width: 100%;
+}
+
+#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    background-color: transparent;
+    border-color: #FFFFFF!important;
+    color: #FFFFFF!important;
+}
+
+#CybotCookiebotDialogTabContent input:checked+.CybotCookiebotDialogBodyLevelButtonSlider {
+    background-color: #fbb900!important;
+}
+
+#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton:hover {
+    color: #fbb900!important;
+}
+
+#CybotCookiebotDialogPoweredbyCybot svg {
+    fill: #FFFFFF!important;
+    display: none;
+    height: 1.733em;
+    max-width: 163px;
+    opacity: .6;
+}
+
+#CybotCookiebotDialogPoweredbyImage {
+    max-height: 0!important;
+}
+
+#CookieDeclaration{
+    color: #FFFFFF!important;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyContentText a, #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonIABHeaderViewPartnersLink, #CybotCookiebotDialog #CybotCookiebotDialogDetailBulkConsentList dt a, #CybotCookiebotDialog #CybotCookiebotDialogDetailFooter a, #CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonIABDescription a, #CybotCookiebotDialog .CybotCookiebotDialogDetailBodyContentCookieLink, #CybotCookiebotDialogDetailBodyContentTextAbout a {
+    color: #fbb900!important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonDescription:hover {
+    color: #fbb900!important;
+}
+
+/* Ende Cookiebot */
+
+
+
+
 .powerCableButton {
     animation: shake 2.5s ease infinite;
     transform: translate3d(0, 0, 0);

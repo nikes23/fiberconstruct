@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiber Construct</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style/style.css">
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e7757b1d-2986-423f-9059-ae48b22173d7" data-blockingmode="auto" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/ad1e9f7653.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="icons/196.png" sizes="196x196">
+    <link rel="shortcut icon" href="icons/32.png" sizes="32x32">
+    <link rel="shortcut icon" href="icons/16.png" sizes="16x16">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon-167.png" sizes="167x167">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon-152.png" sizes="152x152">
+    <link rel="shortcut icon" href="icons/android-icon.png" sizes="196x196">
+    <link rel="stylesheet" href="https://use.typekit.net/ubp0gfr.css">
+    <meta name="msapplication-square70x70logo" content="icons/70.png">
+    <meta name="msapplication-square150x150logo" content="icons/150.png">
+    <meta name="msapplication-wide310x150logo" content="icons/310x150.png">
+    <meta name="msapplication-square310x310logo" content="icons/310.png">
+    <!-- We include the API -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-min.js"></script>
+    <!-- We include the API's easing library (this is optional) -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-ease-functions-min.js"></script>
+    <!--<link href="style/fontawesome/css/all.css" rel="stylesheet">-->
+</head>
+<body ontouchstart="" onload="init()">
+<header>
+    <nav class="nav" id="nav">
+        <div class="navLogo">
+            <a href="#" class="logo">
+                <img src="assets/Fiber_Logo_gelb_weiss.png">
+            </a>
+        </div>
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="nav__link hide">
+            <div class="navElementsLogo">
+                <a href="#" class="logo">
+                    <img src="assets/Fiber_Logo_gelb_weiss.png">
+                </a>
+            </div>
+            <div class="navElements" onclick="myFunction(this)">
+                <a href="#" onclick="closeNavLayer()">Start</a>
+                <a href="#about" onclick="closeNavLayer()">Über Uns</a>
+                <a href="#why-us" onclick="closeNavLayer()">Leistungen</a>
+                <a href="#contact" onclick="closeNavLayer()">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-hero" id="video">
+    <video autoplay loop muted playsinline preload poster id="video-hero">
+        <source src="assets/FiberConstruct_Trailer_720.mp4" type="video/mp4"/>
+        <img alt="Fiber Construct" src="assets/Standbild_FiberConstruct_Video.png" width="100%"
+             height="auto"/>
+    </video>
+    <div class="layer-hero">
+        <div class="" style="width: 100%; height: 100%; z-index: 40000000;">
+            <h1 class="centered-video-title fade-in-title">Wir errichten die Netzinfrastruktur von und für morgen.</h1>
+            <p class="centered-video-text fade-in-text">Anschlussfertig, ganzheitlich und aus einer Hand.</p>
+        </div>
+        <span class="powerCableButtonText">SPEED ON!</span>
+        <a href="#about">
+            <div class="powerCableButton">
+                <img src="assets/PowerCable.png" class="centerIconImagePowerCable">
+            </div>
+        </a>
+        <!--<i class="fa fa-handshake first_button"></i>-->
+    </div>
+</div>
+</div>
+<section id="about" class="about">
+    <div class="container-fluid">
+        <div class="row module">
+            <div class="col-xl-7 col-lg-12 d-flex flex-column justify-content-center align-items-stretch">
+                <div class="content about-us-text">
+                    <!--<iframe width="100%" height="400" src="https://www.youtube.com/embed/yFonv5hymTA?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=yFonv5hymTA" controls="0" loop="1" frameborder="0" allow="autoplay"></iframe>-->
+                    <h2>&Uuml;ber FIBER CONSTRUCT</h2>
+                    <p class="text-justify">
+                        Bei Fiber Construct arbeiten hoch qualifizierte und motivierte Persönlichkeiten an einer gemeineinsamen Mission:
+                    </p>
+                    <p class="text-justify">
+                        Jeden Haushalt in unserem Land mit einer ultraschnellen Datenleitung zu versorgen.
+                    </p>
+                    <p class="text-justify" style="margin-bottom: 40px;">
+                        Dementsprechend übernehmen wir deutschlandweit die Realisierung von Netzinfrastrukturen und Telekommunikationstrassen. Unser Team steht Ihnen mit unserer langjährigen Erfahrung in der frühen Phase des Vorhabens beratend zur Seite, um von Anfang an alles richtig zu machen. Anschließend übernehmen wir umfassende Planungsleistungen, die Realisierung des Projektes inklusive der notwendigen Bauleistungen sowie die abschließende Dokumentation nach den relevanten Vorgaben.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12">
+                <img class="about-image img-fluid mx-auto" alt="Generic placeholder image"
+                     src="assets/Startbild_Team.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-12">
+                <div class="box module">
+                    <div style="flex-direction: column">
+                        <div class="phrase" style="align-content: center; align-items: center;">
+                            <div class="line">W</div>
+                            <div class="line">i</div>
+                            <div class="line">r</div>
+                            <div class="space"></div>
+                            <div class="line">v</div>
+                            <div class="line">e</div>
+                            <div class="line">r</div>
+                            <div class="line">n</div>
+                            <div class="line">e</div>
+                            <div class="line">t</div>
+                            <div class="line">z</div>
+                            <div class="line">e</div>
+                            <div class="line">n</div>
+                            <div class="space"></div>
+                            <div class="line">d</div>
+                            <div class="line">i</div>
+                            <div class="line">e</div>
+                        </div>
+                        <div class="phrase"
+                             style="align-content: center; align-items: center; text-align: center; justify-content: center;">
+                            <div class="line2">Z</div>
+                            <div class="line2">u</div>
+                            <div class="line2">k</div>
+                            <div class="line2">u</div>
+                            <div class="line2">n</div>
+                            <div class="line2">f</div>
+                            <div class="line2">t</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 mt-4 mt-lg-0">
+                <div class="box module">
+                    <div style="flex-direction: column">
+                        <div class="phrase" style="align-content: center; align-items: center;">
+                            <div class="line3">W</div>
+                            <div class="line3">i</div>
+                            <div class="line3">r</div>
+                            <div class="space"></div>
+                            <div class="line3">b</div>
+                            <div class="line3">e</div>
+                            <div class="line3">s</div>
+                            <div class="line3">c</div>
+                            <div class="line3">h</div>
+                            <div class="line3">l</div>
+                            <div class="line3">e</div>
+                            <div class="line3">u</div>
+                            <div class="line3">n</div>
+                            <div class="line3">i</div>
+                            <div class="line3">g</div>
+                            <div class="line3">e</div>
+                            <div class="line3">n</div>
+                            <div class="space"></div>
+                            <div class="line3">d</div>
+                            <div class="line3">a</div>
+                            <div class="line3">s</div>
+                        </div>
+                        <div class="phrase"
+                             style="align-content: center; align-items: center; text-align: center; justify-content: center;">
+                            <div class="line4">I</div>
+                            <div class="line4">n</div>
+                            <div class="line4">t</div>
+                            <div class="line4">e</div>
+                            <div class="line4">r</div>
+                            <div class="line4">n</div>
+                            <div class="line4">e</div>
+                            <div class="line4">t</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 mt-4 mt-lg-0">
+                <div class="box module">
+                    <div style="flex-direction: column">
+                        <div class="phrase" style="align-content: center; align-items: center;">
+                            <div class="line5">W</div>
+                            <div class="line5">i</div>
+                            <div class="line5">r</div>
+                            <div class="space"></div>
+                            <div class="line5">e</div>
+                            <div class="line5">n</div>
+                            <div class="line5">t</div>
+                            <div class="line5">w</div>
+                            <div class="line5">i</div>
+                            <div class="line5">c</div>
+                            <div class="line5">k</div>
+                            <div class="line5">e</div>
+                            <div class="line5">l</div>
+                            <div class="line5">n</div>
+                            <div class="space"></div>
+                            <div class="line5">n</div>
+                            <div class="line5">a</div>
+                            <div class="line5">c</div>
+                            <div class="line5">h</div>
+                            <div class="line5">h</div>
+                            <div class="line5">a</div>
+                            <div class="line5">l</div>
+                            <div class="line5">t</div>
+                            <div class="line5">i</div>
+                            <div class="line5">g</div>
+                        </div>
+                        <div class="phrase"
+                             style="align-content: center; align-items: center; text-align: center; justify-content: center;">
+                            <div class="line6">w</div>
+                            <div class="line6">e</div>
+                            <div class="line6">i</div>
+                            <div class="line6">t</div>
+                            <div class="line6">e</div>
+                            <div class="line6">r</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row exercise">
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center"><i class="fa fa-handshake"></i></div>
+            <h2>Beratung</h2>
+            <p class="marketing_text">Unsere Experten beraten Sie zu allen Fragestellungen rund um das Thema
+                Breitbandausbau, sowie die dafür infrage kommenden Förderprogramme. Wir begleiten Städte und Gemeinde
+                bei einem flächendeckenden Ausbau der Netzinfrastruktur und sehen in einer individuellen und
+                erstklassigen Beratung den Grundstein für ein gelungenes Projekt.
+            </p>
+            <img class="img-fluid marketing_img_1" alt="Generic placeholder image"
+                 src="assets/beratung.jpg">
+            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
+        </div>
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center"><i class="fa fa-file-signature"></i></div>
+            <h2>Dokumentation</h2>
+            <p class="marketing_text">Die Dokumentation der einzelnen abgeschlossenen Bauvorhaben übernahmen wir
+                fachgerecht, schnell und zuverlässig. Unsere Dokumentatoren stellen auf Basis des technischen
+                Expertenwissens eine hochwertige und fehlerfreie Datenerfassung sicher, welche sie in den
+                verschiedenen Geoinformationssystemen erfassen.
+            </p>
+            <img class="img-fluid marketing_img_4" alt="Generic placeholder image"
+                 src="assets/img_3.png">
+            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
+        </div>
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center">
+                <img src="assets/pen_ruler.png" class="centerIconImage">
+            </div>
+            <h2>Planung und Wegesicherung</h2>
+            <p class="marketing_text">In der Grobplanung planen wir den möglichen Verlauf der Telekommunikationstrassen.
+                Auf dieser Basis begleiten wir Sie bei allen Schritten bis zur vollumfänglichen Genehmigung des
+                Vorhabens. Dabei gehen wir die notwendige Antragsstellung mit allen relevanten Behörden in den
+                Austausch. Vor Ort verschaffen wir uns gemeinsam mit den zuständigen Wegeunterhaltspflichtigen einen
+                Überblick und erarbeiten im Dialog den für alle Seiten optimalen Trassenverlauf. In der technischen
+                Planung erstellen wir alle Kalkulations- und Netzplanungsunterlagen sowie alle notwendigen Unterlagen
+                für die Bauausführung. Wir setzen stets auf die neusten und innovativsten Methoden und Tools und
+                können aufgrund unserer stetigen Weiterentwicklung in Projektplanung höchstes Niveau garantieren.
+            </p>
+            <img class="img-fluid marketing_img_2" alt="Generic placeholder image"
+                 src="assets/img_1.png">
+            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
+        </div>
+        <div class="col-xl-6 col-lg-6 module marketing_container">
+            <div class="center">
+                <img src="assets/crane.png" class="centerIconImageCrane">
+            </div>
+            <h2>Realisierung</h2>
+            <p class="marketing_text">Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort und können die zum Teil
+                sehr komplexen Tiefbaumaßnahmen auf Basis alternativer Verlegemethoden vollumfänglich über&shy;neh&shy;men.
+                Neben Or&shy;ganisation und Koordination übernehmen wir auch die Überwachung der einzelnen Teilbereiche
+                des Baus. Hierzu zählen unter anderem das Überwachen des gesamten Baus, die Einhaltung jeglicher
+                Vorschriften bei der Bauausführung, aber auch die Abnahme und Dokumentation in der Umfassung der
+                Rotberichtigung. Zudem übernehmen wir auch die fachgerechte Montage und korrekte Vermessung.
+            </p>
+            <img class="img-fluid marketing_img_3" alt="Generic placeholder image"
+                 src="assets/realisierung.jpg">
+            <!--<a class="elementbutton module" href="#" role="button">Klick Mich</a>-->
+        </div>
+    </div>
+</div>
+
+<section class="contactForm module" id="contact">
+    <div class="container">
+        <!--<div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Contact Form #01</h2>
+            </div>
+        </div>-->
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 col-md-12 d-flex align-items-stretch information">
+                            <div class="info-wrap primaryColor primaryBackColor w-100 p-lg-5 p-4">
+                                <h2 class="contactInfoHeadline">Informationen</h2>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Adresse:</span><br>
+                                            <a href="https://maps.apple.com/?daddr=Charge+Construct+GmbH+%7C+Erni-Singerl-Stra%C3%9Fe+1+85053+Ingolstadt&dirflg=d&t=h">Erni-Singerl-Straße
+                                                1,<br>85053 Ingolstadt</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Telefon:</span><br><a href="tel:+4984149399122">+49 841
+                                            49399122</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>E-Mail:</span><br><a
+                                                href="mailto:info@fiberconstruct.de">info@fiberconstruct.de</a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="text pl-3 contactFormRightText">
+                                        <p><span>Webseite</span><br><a href="#">fiberconstruct.de</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 d-flex align-items-stretch">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h2 class="contactHeadline">Kontaktieren Sie uns</h2>
+                                <!--{{msg}}-->
+                                <!--<div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    Your message was sent, thank you!
+                                </div>-->
+                                <!--<form method="POST" id="contactForm" name="contactForm" action="send">-->
+                                <form method="POST" id="contactForm" name="contactForm" action="mail.php">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="firstname"
+                                                       id="firstname"
+                                                       placeholder="Vorname" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="lastname"
+                                                       id="lastname"
+                                                       placeholder="Nachname" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="mail" id="mail"
+                                                       placeholder="E-Mail" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="subject"
+                                                       id="subject"
+                                                       placeholder="Betreff" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                              rows="7" placeholder="Nachricht" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group" style="display:flex; flex-direction: row; justify-content: flex-end; align-items: baseline;">
+                                                <input type="checkbox" name="datenschutzCheckBox"
+                                                       value="datenschutzCheckBox" id="datenschutzCheckBox" required style="margin-right: 20px!important;">
+                                                <label for="datenschutzCheckBox" style="color: white; text-align: justify; font-size: 12px;">
+                                                    Ich habe die <a href="datenschutz.html" style="font-size: 12px!important;">Datenschutzerklärung</a> zur Kenntnis genommen und
+                                                    akzeptiert. Ich stimme zu, dass meine Formularangaben zur
+                                                    Kontaktaufnahme bzw. zur Bearbeitung meines Anliegens gespeichert
+                                                    werden.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Nachricht senden" class="elementbuttonContactSubmit submit">
+                                                <!--<button type="submit">Submit</button>-->
+                                                <!--<div class="elementbuttonContact module submitting" role="button"
+                                                     onclick="document.forms[0].submit()">
+                                                    <div style="flex-direction: column">
+                                                        <div class="phrase"
+                                                             style="align-content: center; align-items: center;">
+                                                            <div class="line7">N</div>
+                                                            <div class="line7">a</div>
+                                                            <div class="line7">c</div>
+                                                            <div class="line7">h</div>
+                                                            <div class="line7">r</div>
+                                                            <div class="line7">i</div>
+                                                            <div class="line7">c</div>
+                                                            <div class="line7">h</div>
+                                                            <div class="line7">t</div>
+                                                            <div class="space"></div>
+                                                            <div class="line7">s</div>
+                                                            <div class="line7">e</div>
+                                                            <div class="line7">n</div>
+                                                            <div class="line7">d</div>
+                                                            <div class="line7">e</div>
+                                                            <div class="line7">n</div>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                                                <!--<a class="elementbuttonContact" href="#" role="button">Nachricht
+                                                    senden</a>
+                                                <div class="submitting"></div>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call and Calender Button -->
+<div>
+    <!-- Mobil Call Button -->
+    <div>
+        <div>
+            <a class="callButton" onclick="phoneFunction(this)" target="_blank">
+                <i class="fa fa-phone phoneCallButton" id="phone"></i>
+                <img src="assets/x-solid.png" class="xImageSize" style="color: white;" id="xPhone">
+            </a>
+            <a href="https://calendly.com/fiberconstruct/30min" target="_blank">
+                <span class="callBackMobil" id="callBackMobil">R&uuml;ckruf vereinbaren</span>
+            </a>
+            <a href="tel:+4984149399122">
+                <span class="callNowMobil" id="callNowMobil">Jetzt anrufen</span>
+            </a>
+        </div>
+    </div>
+    <!-- Tablet & Desktop Calender Button -->
+    <div>
+        <a href="https://calendly.com/fiberconstruct/30min" class="calenderButton" target="_blank">
+            <i class="fa fa-calendar calenderIcon" id="calender"></i>
+        </a>
+        <a href="https://calendly.com/fiberconstruct/30min" target="_blank">
+            <span class="callBackDesktop" id="callBackDesktop">R&uuml;ckruf vereinbaren</span>
+        </a>
+    </div>
+</div>
+<footer id="footer" class="footer">
+    <!--<div class="elementbutton">Test</div>-->
+    <div class="footerBottomLinksContainer">
+        <a style="margin-right: 20px" href="#" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a style="margin-left: 20px; margin-right: 20px" href="https://instagram.com/fiber.construct?utm_medium=copy_link" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a style="margin-left: 20px" href="https://www.linkedin.com/company/fiber-construct-gmbh/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+    <div class="footerBottomLinksContainer">
+        <a style="margin-right: 20px" href="#">
+            Startseite
+        </a>
+        <a style="margin-left: 20px; margin-right: 20px" href="datenschutz.html">
+            Datenschutz
+        </a>
+        <a style="margin-left: 20px" href="impressum.html">
+            Impressum
+        </a>
+    </div>
+    <div class="copyright">
+        <p>Made with ❤ in Ingolstadt by</p>
+        <p class="footerSmallLine"><a href="https://region10.group/" target="_blank">REGION10 GROUP GmbH</a></p>
+        <p>© 2021 -
+            <script>document.write(new Date().getFullYear())</script>
+            Fiber Construct.
+        </p>
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
