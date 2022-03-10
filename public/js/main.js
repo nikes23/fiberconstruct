@@ -74,9 +74,6 @@ function phoneFunction(x) {
 }
 
 
-
-
-
 (function ($) {
 
     /**
@@ -129,7 +126,8 @@ win.scroll(function (event) {
 
 });
 
-
+//Kontaktformular für weiterleiten an Node.js
+/**
 const contactForm = document.querySelector('.contactForm');
 let firstname = document.getElementById('firstname');
 let lastname = document.getElementById('lastname');
@@ -169,10 +167,7 @@ contactForm.addEventListener('submit', (e)=>{
 
     xhr.send(JSON.stringify(formData));
 })
-
-
-
-
+*/
 
 /*
 * In this example we will only customize the document's scrolling,

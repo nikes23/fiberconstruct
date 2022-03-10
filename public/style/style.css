@@ -1944,6 +1944,10 @@
     color: #fbb900!important;
 }
 
+#CybotCookiebotDialog .CybotCookiebotFader{
+    background-image: none!important;
+}
+
 /* Ende Cookiebot */
 
 
